@@ -1,0 +1,110 @@
+
+body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background: #1a1a1a;
+}
+
+.clock{
+	width: 350px;
+	height: 350px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: url(clock_dark.png);
+	background-size: cover;
+	border: 4px solid #3f3f3f;
+	border-radius: 50%;
+	box-shadow: inset 1px -5px 20px 9px rgb(255 255 255 / 5%), 
+		inset -7px -20px 15px rgb(255 255 255 / 5%);
+}
+
+.clock:after{
+	content: '';
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	background: #fff;
+	border-radius: 50%;
+}
+
+.clock .hour, .clock .min, .clock .sec{
+	position: absolute;
+}
+
+.ch{
+	width: 170px;
+	height: 170px;
+}
+
+.cm{
+	width: 150px;
+	height: 170px;
+}
+
+.cs{
+	width: 200px;
+	height: 230px;
+}
+
+.ch, .cm, .cs{
+	display: flex;
+	justify-content: center;
+	border-radius: 50%;
+}
+
+.ch:after{
+	content: '';
+	position: absolute;
+	width: 6px;
+	height: 80px;
+	background: #fff;
+	border-radius: 6px;
+	
+}
+
+.cm:after{
+	content: '';
+	position: absolute;
+	width: 4px;
+	height: 90px;
+	background: #fff;
+	border-radius: 6px;
+}
+.cs:after{
+	content: '';
+	position: absolute;
+	width: 2px;
+	height: 150px;
+	background: #f2ff00;
+	border-radius: 6px;
+}
+
+.clock p {
+    margin-top: 50%;
+    color: #fff;
+    font-family: arial;
+	opacity: 80%;
+}
+
+.Digital-Clock{
+    position: absolute;
+    margin-top: 500px;
+    color: white;
+    font-family: arial;
+	/* margin-left: 10%; remove first two lines */ 
+}
+
+.Digital-BG{
+	background-color: #1d1f21;
+    height: 50px;
+    width: 60px;
+	/* To center inner items*/
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	float: left;
+    margin-left: 25px;
+}
